@@ -1,6 +1,6 @@
 require 'pry'
 
-#### brute force algorithm
+### brute force algorithm
 # def array_manipulation(n, queries)
 #   # input: the number n of elements in the array && queries => a two dimensional array of queries where each queries[i] contains three integers, a, b, and k.
 #   # initialize array result with n * 0 elements
@@ -20,7 +20,6 @@ require 'pry'
 # end
 
 ### Prefix sum algorithm
-
 def array_manipulation(n, queries)
   # initialize array result with (n+1) * 0 elements, because we will be updating N+1 index
   final_array = Array.new(n+2, 0)
@@ -40,3 +39,7 @@ end
 
 array_manipulation(5, [[1, 2, 100], [2, 5, 100], [3, 4, 100]])
 # should return 200
+
+array_final = [0, 0, 0, 0, 0, 0, 0]
+array_final = [0, 100, 100, 0, 0, -100, -100]
+array_final = [0, 100, 200, 200, 200, 100, 0]
